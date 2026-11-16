@@ -206,7 +206,7 @@ export const register: Register = on => {
     if (!isInPane && (await runLauncher($, args, home)) === null) {
       return { text: '起動できません: Python 3 が見つかりません' }
     }
-    if (isFirstRun) await $.prompt.fill({ text: '/skill-album-tools classify', mode: 'append' })
+    if (isFirstRun) await $.prompt.fill({ text: '/skill-album:skill-album-tools classify', mode: 'append' })
     return { text: 'Skill Album を開きました' }
   })
 

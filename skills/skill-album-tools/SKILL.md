@@ -1,6 +1,6 @@
 ---
 name: skill-album-tools
-description: Skill Album を開き、分類、カード文章、絵の指示書を Claude が作る手順。トリガー「/skill-album-tools」。
+description: Skill Album を開き、分類、カード文章、絵の指示書を Claude が作る手順。トリガー「/skill-album:skill-album-tools」。
 allowed-tools: Read, Write, Agent, Bash(python3 -I *), Bash(python -I *), Bash(py -3 -I *)
 argument-hint: "open|classify|texts|prompts"
 disable-model-invocation: true
@@ -38,7 +38,7 @@ disable-model-invocation: true
 メインスレッドで SKILL.md を読まない。
 
 1. `<apply> export texts` で `cards[].id`、`sourceHash`、`path` を得る
-2. 10 件ずつに分け、`skill-album-card-writer` エージェントへ `id`、`sourceHash`、`path` を渡す。プロンプトに「JSON だけを返す」を含める
+2. 10 件ずつに分け、`skill-album:skill-album-card-writer` エージェントへ `id`、`sourceHash`、`path` を渡す。プロンプトに「JSON だけを返す」を含める
 3. JSON として解釈できる返答だけを 1 つにまとめて保存する。解釈できない返答は捨てて件数を数える
 4. `<apply> texts <案.json>`
 5. 反映件数、除外件数を理由コード別に伝える。`not-japanese` は日本語でないので除外された分で、書き直して再度反映する
