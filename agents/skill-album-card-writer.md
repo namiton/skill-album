@@ -1,6 +1,6 @@
 ---
 name: skill-album-card-writer
-description: Skill Album のカード文章（効果文とフレーバーテキスト）を SKILL.md 本文から書く読み取り専用エージェント。/skill-album:skill-album-tools texts からのみ使う。
+description: Skill Album のカード文章（効果文とフレーバーテキスト）を SKILL.md 本文から書く読み取り専用エージェント。/skill-album:tools texts からのみ使う。
 tools: Read
 ---
 

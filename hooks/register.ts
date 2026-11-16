@@ -128,7 +128,7 @@ async function dataDir($: EngineInterface): Promise<string> {
 
 /** 動く Python で launcher を走らせる。どれも起動できなければ null。 */
 async function runLauncher($: EngineInterface, args: string[], cwd: string): Promise<string | null> {
-  const launcher = `${$.plugin.root}\\skills\\skill-album-tools\\scripts\\launcher.py`
+  const launcher = `${$.plugin.root}\\skills\\tools\\scripts\\launcher.py`
   for (const python of PYTHONS) {
     try {
       const ran = await $.process.run([...python, '-I', launcher, ...args], { cwd, timeoutMs: 15000 })
@@ -206,7 +206,7 @@ export const register: Register = on => {
     if (!isInPane && (await runLauncher($, args, home)) === null) {
       return { text: '起動できません: Python 3 が見つかりません' }
     }
-    if (isFirstRun) await $.prompt.fill({ text: '/skill-album:skill-album-tools classify', mode: 'append' })
+    if (isFirstRun) await $.prompt.fill({ text: '/skill-album:tools classify', mode: 'append' })
     return { text: 'Skill Album を開きました' }
   })
 

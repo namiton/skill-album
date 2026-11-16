@@ -27,10 +27,10 @@ Claude Code で次の 2 つを実行します。
 | コマンド | すること |
 |---|---|
 | `/skill-album` | アルバムを開く（Windows のデスクトップ版のみ。内蔵ブラウザで開き、カードの「使う」で入力欄に `/スキル名` が入る） |
-| `/skill-album:skill-album-tools open` | アルバムを既定のブラウザで開く（全 OS） |
-| `/skill-album:skill-album-tools classify` | カードをフォルダへ自動で分ける |
-| `/skill-album:skill-album-tools texts` | カードの説明文とフレーバーテキストを書く |
-| `/skill-album:skill-album-tools prompts` | カードの絵の指示書（`art-prompts.md`）を作る |
+| `/skill-album:tools open` | アルバムを既定のブラウザで開く（全 OS） |
+| `/skill-album:tools classify` | カードをフォルダへ自動で分ける |
+| `/skill-album:tools texts` | カードの説明文とフレーバーテキストを書く |
+| `/skill-album:tools prompts` | カードの絵の指示書（`art-prompts.md`）を作る |
 
 初めて開いたときは、カードがまだフォルダに分かれていません。`classify` を一度実行してください。
 
@@ -45,7 +45,7 @@ Claude Code で次の 2 つを実行します。
 
 ### Windows 以外
 
-`/skill-album` コマンドと内蔵ブラウザでの表示は Windows のデスクトップ版だけです。ほかの環境では `/skill-album:skill-album-tools open` で開き、「使う」を押すと `/スキル名` がクリップボードにコピーされます。
+`/skill-album` コマンドと内蔵ブラウザでの表示は Windows のデスクトップ版だけです。ほかの環境では `/skill-album:tools open` で開き、「使う」を押すと `/スキル名` がクリップボードにコピーされます。
 
 ## ライセンス
 
@@ -64,6 +64,6 @@ Requirements: Claude Code and Python 3.9+ (standard library only).
 /plugin install skill-album@skill-album
 ```
 
-Run `/skill-album:skill-album-tools open` to open the album in your browser (on Windows desktop, `/skill-album` opens it in the built-in browser pane), then `/skill-album:skill-album-tools classify` once to sort the cards into folders.
+Run `/skill-album:tools open` to open the album in your browser (on Windows desktop, `/skill-album` opens it in the built-in browser pane), then `/skill-album:tools classify` once to sort the cards into folders.
 
 License: MIT, except the sound effects, which are from OtoLogic under CC BY 4.0. See [NOTICE.md](NOTICE.md).

@@ -2,4 +2,4 @@ __pycache__/
 *.pyc
 .claude-plugin/types/
 node_modules/
-skills/skill-album-tools/web/assets/*.wav
+skills/tools/web/assets/*.wav

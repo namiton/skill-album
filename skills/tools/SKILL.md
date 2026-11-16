@@ -1,6 +1,6 @@
 ---
-name: skill-album-tools
-description: Skill Album を開き、分類、カード文章、絵の指示書を Claude が作る手順。トリガー「/skill-album:skill-album-tools」。
+name: tools
+description: Skill Album を開き、分類、カード文章、絵の指示書を Claude が作る手順。トリガー「/skill-album:tools」。
 allowed-tools: Read, Write, Agent, Bash(python3 -I *), Bash(python -I *), Bash(py -3 -I *)
 argument-hint: "open|classify|texts|prompts"
 disable-model-invocation: true
