@@ -1,0 +1,71 @@
+{
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+  "credit": "使用した音素材：OtoLogic(https://otologic.jp) CC BY 4.0",
+  "files": [
+    {
+      "file": "web/assets/slide.mp3",
+      "id": "Plastic_Sheet01",
+      "name": "下敷き01",
+      "page": "https://otologic.jp/free/se/stationery02.html",
+      "zip_url": "https://otologic.jp/sounds/se/mp3-zip/Plastic_Sheet01-mp3.zip",
+      "source_file": "Plastic_Sheet01-1.mp3",
+      "sha256": "55124469dc43945465b15dc5143b5c624ef00c82bced1614e6d99fe440f86e2e",
+      "source_sha256": "31543231a96ea1453f911127d2e2c49e6929df8363b3ce6b9c3350ee698042f5",
+      "modified": "0.10〜0.80 秒を切り出し、末尾をフェードアウト",
+      "license": "CC BY 4.0",
+      "installed_at": "2026-11-05"
+    },
+    {
+      "file": "web/assets/pop.mp3",
+      "id": "Onoma-Pop01",
+      "name": "オノマトペ 弾ける01",
+      "page": "https://otologic.jp/free/se/pop01.html",
+      "zip_url": "https://otologic.jp/sounds/se/mp3-zip/Onoma-Pop01-mp3.zip",
+      "source_file": "Onoma-Pop01-1(Dry).mp3",
+      "sha256": "c023069a6830a465ad473740f5fadb166d3c7f340a9829743c84f03a62b0021e",
+      "source_sha256": "73f74f58c25d8464a8b5ad570c2519a10c2b1e5d17ff4d2058e4da61457abbe5",
+      "modified": "0.08〜0.36 秒を切り出し、末尾をフェードアウト",
+      "license": "CC BY 4.0",
+      "installed_at": "2026-11-05"
+    },
+    {
+      "file": "web/assets/flip.mp3",
+      "id": "Book03",
+      "name": "本03",
+      "page": "https://otologic.jp/free/se/books01.html",
+      "zip_url": "https://otologic.jp/sounds/se/mp3-zip/Book03-mp3.zip",
+      "source_file": "Book03-1(Flip).mp3",
+      "sha256": "c66969b8a5d71a6f78574b76f00dfe914ecda2d43790079dfa722bf870aa3865",
+      "source_sha256": "7fe6b619f5028f2a18c9db251bcd1e5b1da2d96383df51787bc1c18f389e2223",
+      "modified": "0.12〜0.98 秒を切り出し、末尾をフェードアウト",
+      "license": "CC BY 4.0",
+      "installed_at": "2026-11-05"
+    },
+    {
+      "file": "web/assets/turn.mp3",
+      "id": "Flyer02",
+      "name": "チラシ02",
+      "page": "https://otologic.jp/free/se/books01.html",
+      "zip_url": "https://otologic.jp/sounds/se/mp3-zip/Flyer02-mp3.zip",
+      "source_file": "Flyer02-2(Flip_Over).mp3",
+      "sha256": "c24a8617965b512d891716d48b97029b16ebd874bffde9e7aaaa11e41ce85b1b",
+      "source_sha256": "728a18d9a24bc19695e4026456da022d467fca5ebc97e7dd7537349800dd4fb4",
+      "modified": "0.10〜1.06 秒を切り出し、音量を 7dB 上げ、末尾をフェードアウト",
+      "license": "CC BY 4.0",
+      "installed_at": "2026-11-05"
+    },
+    {
+      "file": "web/assets/click.mp3",
+      "id": "PC-Mouse06",
+      "name": "PC マウス06",
+      "page": "https://otologic.jp/free/se/pc-mouse01.html",
+      "zip_url": "https://otologic.jp/sounds/se/mp3-zip/PC-Mouse06-mp3.zip",
+      "source_file": "PC-Mouse06-1.mp3",
+      "sha256": "87d97b2d054cab63ce1ad261300e3b21703d5f3c113b0c551bc79438867bcc7b",
+      "modified": "加工なし",
+      "license": "CC BY 4.0",
+      "installed_at": "2026-11-05"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "skill-album",
+  "description": "Skill Album: 入っている Skill をカードにして眺めるアルバム",
+  "owner": { "name": "namiton" },
+  "plugins": [
+    {
+      "name": "skill-album",
+      "description": "入っている Skill をカードにして、バインダーで眺めるアルバム",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

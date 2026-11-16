@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Skill Album</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/album.css">
+</head>
+<body>
+<header class="bar">
+  <input id="search" type="search" aria-label="検索" placeholder="検索">
+  <select id="kind" aria-label="種別">
+    <option value="">すべて</option>
+    <option value="自作">自作</option>
+    <option value="プラグイン">プラグイン</option>
+    <option value="公式">公式</option>
+  </select>
+  <select id="art" aria-label="絵">
+    <option value="">絵: すべて</option>
+    <option value="yes">絵あり</option>
+    <option value="no">絵なし</option>
+  </select>
+  <select id="sort" aria-label="並び">
+    <option value="no">番号順</option>
+    <option value="count">使用回数順</option>
+    <option value="updated">更新日順</option>
+  </select>
+  <button id="folders-open" type="button">フォルダ</button>
+  <button id="sound" type="button" aria-pressed="true">音</button>
+  <button id="album-close" type="button">閉じる</button>
+</header>
+<p id="status" class="status" role="status"></p>
+<main class="stage">
+  <div id="binder" class="binder">
+    <div class="corner corner-tl"></div><div class="corner corner-tr"></div>
+    <div class="corner corner-bl"></div><div class="corner corner-br"></div>
+    <nav id="tabs-left" class="tabs tabs-left" aria-label="フォルダ"></nav>
+    <nav id="tabs-right" class="tabs tabs-right" aria-label="フォルダ"></nav>
+    <button id="prev" class="turn turn-prev" type="button" aria-label="前のページ" tabindex="-1"></button>
+    <div id="book" class="book"></div>
+    <div class="spine"><span class="ring"></span><span class="ring"></span><span class="ring"></span></div>
+    <button id="next" class="turn turn-next" type="button" aria-label="次のページ" tabindex="-1"></button>
+    <p id="pager" class="pager"></p>
+  </div>
+</main>
+<button id="cover" class="cover" type="button" aria-label="アルバムを開く" hidden>
+  <span class="cover-face cover-outer">
+    <span class="corner corner-tl"></span><span class="corner corner-tr"></span>
+    <span class="corner corner-bl"></span><span class="corner corner-br"></span>
+  </span>
+</button>
+<div id="album-flip" class="album-flip" hidden></div>
+<div id="pack" class="pack-layer" hidden>
+  <button id="pack-open" class="pack" type="button" aria-label="パックを開ける">
+    <span class="pack-top"></span>
+    <span class="pack-body"><span id="pack-count" class="pack-count"></span></span>
+  </button>
+  <div id="pack-cards" class="pack-cards"></div>
+</div>
+<div id="zoom" class="zoom" hidden>
+  <div id="zoom-stage" class="zoom-stage"></div>
+  <div class="zoom-status">
+    <p id="use-result" class="use-result" role="status"></p>
+    <p id="art-result" class="use-result" role="status"></p>
+  </div>
+</div>
+<div id="folders" class="sheet" hidden>
+  <div class="sheet-body">
+    <h2>フォルダ</h2>
+    <ul id="folder-list" class="folder-list"></ul>
+    <p id="folder-result" class="use-result" role="status"></p>
+    <div class="sheet-actions">
+      <button id="folder-add" type="button">追加</button>
+      <button id="folders-close" type="button">閉じる</button>
+    </div>
+  </div>
+</div>
+<script src="/vendor/page-flip.browser.js"></script>
+<script type="module" src="/album.js"></script>
+</body>
+</html>

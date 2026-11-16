@@ -1,0 +1,9 @@
+{
+  "name": "skill-album",
+  "version": "0.1.0",
+  "description": "入っている Skill をカードにして、バインダーで眺めるアルバム",
+  "author": { "name": "namiton" },
+  "homepage": "https://github.com/namiton/skill-album",
+  "repository": "https://github.com/namiton/skill-album",
+  "license": "MIT"
+}
